@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: #F6F6F3;
+    color:#444;
+    line-height: 1.5;
+}
+
+ul{padding: 0;}
+li{list-style: none;}
+
+.aside {
+    position:absolute;
+    width:170px;
+    /*border-right: 2px solid #423f43;*/
+}
+
+.aside ul li a{
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+.aside ul li .aside-title {
+    width:168px;
+    height:2em;
+    line-height: 2em;
+    padding-left: 20px;
+    display:block;
+    font-size:1.1em;
+    font-weight: 500;
+    background: #423f43;
+    color:white;
+}
+
+.main {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.toolbar {margin:10px 0;}

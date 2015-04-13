@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<style>
+			.wrap{}
+
+			.a1{height:100px;position: relative;float:left;}
+		</style>
+		
+	<body>
+		<div class="wrap">
+			<div class="a1">1</div>
+			<div style="clear:both"></div>
+		</div>
+        <script>
+            $.ajax({
+                url:"/",
+                complete:function(req,status){
+                    //console.log('status:'+status);
+                },
+                error:function(req,status,error){
+                    console.log(req);
+                },
+                success:function(res){
+                    console.log(res);
+                },
+                statusCode:{
+                    403:function(req){
+                        console.log(req.responseText);
+                    }
+                }
+            });
+        </script>
+	</body>
+</html>
